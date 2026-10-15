@@ -1,0 +1,68 @@
+{
+  "packages": [
+    {
+      "id": 1,
+      "name": "Tirupati Yatra",
+      "description": "Group travel to Tirupati temple",
+      "start_date": "2025-09-10",
+      "end_date": "2025-09-12"
+    },
+    {
+      "id": 2,
+      "name": "Sabarimala Trip",
+      "description": "Pilgrimage to Sabarimala",
+      "start_date": "2025-11-01",
+      "end_date": "2025-11-05"
+    }
+  ],
+  "participants": [
+    { "id": 1, "name": "Ramesh", "email": "ramesh@example.com", "phone": "9876543210" },
+    { "id": 2, "name": "Suresh", "email": "suresh@example.com", "phone": "9876543211" },
+    { "id": 3, "name": "Mahesh", "email": "mahesh@example.com", "phone": "9876543212" },
+    { "id": 4, "name": "Anil", "email": "anil@example.com", "phone": "9876543213" }
+  ],
+  "package_participants": [
+    { "id": 1, "package_id": 1, "participant_id": 1 },
+    { "id": 2, "package_id": 1, "participant_id": 2 },
+    { "id": 3, "package_id": 1, "participant_id": 3 },
+    { "id": 4, "package_id": 2, "participant_id": 2 },
+    { "id": 5, "package_id": 2, "participant_id": 3 },
+    { "id": 6, "package_id": 2, "participant_id": 4 }
+  ],
+  "expenses": [
+    {
+      "id": 1,
+      "package_id": 1,
+      "category_type": "common",
+      "category_name": "Train Tickets",
+      "amount": 12000,
+      "created_at": "2025-09-01T08:00:00Z"
+    },
+    {
+      "id": 2,
+      "package_id": 1,
+      "category_type": "individual",
+      "category_name": "Mudra Expense",
+      "amount": 1500,
+      "created_at": "2025-09-01T10:00:00Z"
+    },
+    {
+      "id": 3,
+      "package_id": 2,
+      "category_type": "common",
+      "category_name": "Yatra & Sanidhanam Expense",
+      "amount": 6000,
+      "created_at": "2025-09-02T08:00:00Z"
+    }
+  ],
+  "expense_participants": [
+    { "id": 1, "expense_id": 1, "participant_id": 1, "share_amount": 4000 },
+    { "id": 2, "expense_id": 1, "participant_id": 2, "share_amount": 4000 },
+    { "id": 3, "expense_id": 1, "participant_id": 3, "share_amount": 4000 },
+    { "id": 4, "expense_id": 2, "participant_id": 2, "share_amount": 750 },
+    { "id": 5, "expense_id": 2, "participant_id": 3, "share_amount": 750 },
+    { "id": 6, "expense_id": 3, "participant_id": 2, "share_amount": 2000 },
+    { "id": 7, "expense_id": 3, "participant_id": 3, "share_amount": 2000 },
+    { "id": 8, "expense_id": 3, "participant_id": 4, "share_amount": 2000 }
+  ]
+}
